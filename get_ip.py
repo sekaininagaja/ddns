@@ -15,7 +15,7 @@ def main():
                 settings.DOMAIN, settings.PASSWORD, settings.HOST, content)
                 print(ip_put_url)
                 response2 = urllib.request.urlopen(ip_put_url, timeout=5)
-                print(response2)
+                print(response2.read())
     except urllib.error as e:
         print(type(e))
 
